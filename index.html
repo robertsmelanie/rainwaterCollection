@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainwater Collection Estimator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌧️ DIY Rainwater Collection Estimator</h1>
+
+        <label for="roofSize">Enter Roof Area (sq ft):</label>
+        <input type="number" id="roofSize" placeholder="E.g., 1000" required>
+
+        <label for="rainfall">Enter Annual Rainfall (inches):</label>
+        <input type="number" id="rainfall" placeholder="E.g., 40" required>
+
+        <button onclick="calculateWater()">Estimate Collection</button>
+
+        <div id="result">
+            <h2>Estimated Water Collection:</h2>
+            <p><strong>Total Water:</strong> <span id="totalWater"></span> gallons per year</p>
+            <p><strong>Recommended Tank Size:</strong> <span id="tankSize"></span></p>
+            <p><strong>Filtration Tip:</strong> Use a <a href="#" id="filterLink">gutter filter</a> for clean water!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
