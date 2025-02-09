@@ -22,7 +22,7 @@ function calculateWater() {
         document.getElementById("result").style.display = "block";
 
         // Add affiliate link for filters
-        document.getElementById("filterLink").href = "https://www.amazon.com/s?k=gutter+filter";
+       // document.getElementById("filterLink").href = "https://www.amazon.com/s?k=gutter+filter";
     } else {
         alert("Please enter valid numbers for roof size and rainfall.");
     }
